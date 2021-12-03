@@ -1,0 +1,69 @@
+body{
+    background-color: grey;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.modal__block{
+    font-family: 'Shippori Antique', sans-serif;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.fade__block{
+    transform: scale(2, 2);
+    opacity: 0;
+    transition: all 1s;
+}
+.modal_logo{
+    width: 20%;
+    animation: logoFade 2s ease 1;
+    opacity: 0;
+    transition: all 0.5s;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+@keyframes logoFade {
+    0%{
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+.content__away{
+    color: green;
+    text-shadow: 0 0 5px green;
+    animation: fade 3s ease 1;
+    opacity: 0;
+}
+@keyframes fade {
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.content{
+    font-weight: 500;
+    font-size: 50px;
+}
+.content span{
+    transition: all 0.5s;
+}
+.right__letter{
+    color: #F0A500;
+    text-shadow: 0 0 5px #F0A500;
+}
+.wrong__letter{
+    color: #082032;
+}
